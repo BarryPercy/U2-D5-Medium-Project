@@ -1,29 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&display=swap');
-body{
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:wght@600&family=Noto+Sans:wght@400;500&display=swap');body{
     font-family: 'Noto Sans', sans-serif;
 }
-nav {
-    padding-top: 20px;
-    padding-bottom:0px;
+
+header{
+    padding-bottom:10px;
     padding-right: 400px;
-    display:flex;
-    justify-content: flex-end;
     background-color: #ffc017;
     border-bottom: solid;
+    position:sticky;
+    top:0;
     border-width: 1px;
+    z-index:10;
+}
+.sticky-passed{
+    background-color: white;
+    transition:.75s;
+}
+.medium-logo{
+    position: relative;
+    padding-left:400px;
+    top: 25px;
+    width:180px;
+}
+nav {  
+    display:flex;
+    justify-content: flex-end;  
 }
   
 nav .nav-link {
-    font-size: 20px;
-    padding: 20px;
+    font-size: 15px;
+    padding-left: 20px;
     color: black;
     text-decoration: none;
     cursor: pointer;
 }
 
-nav .nav-link.active,
-nav .nav-link:hover {
-} /* same as below */
 
 nav .nav-link:is(.active, :hover):not(div.nav-link) {
     color: #ffc017;
@@ -34,9 +45,161 @@ nav .nav-link:is(.active, :hover):not(div.nav-link) {
     background-color: black;
     color:white;
     border-radius: 30px;
-    width:150px;
-    height:50px;
+    width:120px;
+    height:40px;
     font-family: inherit;
     font-size:inherit;
-    bottom:12px;
+    bottom:14px;
+    border: none;
+}
+.button-sticky-passed{
+    background-color: #0f730c;
+    transition:.75s;
+}
+.jumbotron{
+    height:500px;
+    width:100vw;
+    display:flex;
+    background-color: #ffc017;
+    border-bottom: solid;
+    border-width: 1px;
+}
+.left-jumbo{
+    display: relative;
+    flex-direction: column;
+    padding-left: 400px;
+    padding-top:100px;
+    width:2000px;
+}
+.big-svg{
+    position: relative;
+    left:12.5vh;
+}
+h1{
+    display:flex;
+    font-family: 'Gelasio', serif;
+    font-size: 100px;
+    flex-wrap: nowrap;
+}
+h2{
+    margin-top:2vh;
+    width:500px;
+    font-size:28px;
+    color:#292929;
+}
+
+.jumbo-button{
+    margin-top:60px;
+    width:225px;
+    height:50px;
+    border-radius:30px;
+    background-color: #191919;
+    color:white;
+    font-size: 22px;
+    font-family: inherit;
+}
+.jumbo-button:hover{
+    background-color: #080808;
+}
+
+.allcontent{
+    padding-left:400px;
+    padding-top:45px;
+    padding-right:200px;
+}
+.trending-on-medium{
+    position: relative;
+    font-weight: bold;
+    font-size:14px;
+    top:9px;
+    left:10px;
+}
+.trending-svg{
+    display:relative;
+    top:20px;
+}
+.trending-title{
+    display:flex
+}
+
+.trending-articles{
+    display: flex;
+    flex-wrap: wrap;
+}
+.trending-article>p{
+    color:#e6e6e6;
+    font-size: 30px;
+    font-weight:bold;
+    margin-top:10px;
+}
+.trending-article > div{
+    position: relative;
+    left:55px;
+    bottom:30px;
+}
+.trending-article{
+    width:440px;
+}
+.more-article{
+    width:500px;
+    margin-bottom:60px;
+}
+.more-article>p:first-of-type{
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.more-article>p:nth-of-type(2){
+    color:#747575;
+    margin-top:10px;
+}
+.more-articles{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.articles-and-discover{
+    display:flex;
+    padding-left: 400px;
+    margin-top:50px;
+}
+.trending-content>p{
+    width:400px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.articles-images{
+    border-radius: 50%;
+    width:23px;
+}
+.imageAndAuthorDiv{
+    display:flex;
+}
+
+.imageAndAuthorDiv > p{
+    margin-left: 10px;
+    align-self: center;
+    font-size: 14px;
+}
+.dateAndTimeDiv{
+    margin-top:15px;
+    display: flex;
+    color: #757575;
+    gap:50px;
+}
+.moreDateAndTimeDiv{
+    margin-top:15px;
+    display: flex;
+    color: #757575;
+    gap:10px;
+}
+
+.lorem-ipsum{
+    padding-left:400px;
+    padding-right:400px;
+}
+
+hr{
+    background-color: #e6e6e6;
 }
